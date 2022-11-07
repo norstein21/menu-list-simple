@@ -1,11 +1,11 @@
 const menu = [
   {
     id: 1,
-    title: 'buttermilk pancakes',
+    title: 'Indomie Goreng',
     category: 'breakfast',
     price: 15.99,
-    img: './images/item-1.jpeg',
-    desc: `I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed `,
+    img: 'https://i0.wp.com/resepkoki.id/wp-content/uploads/2020/11/Resep-Indomie-Goreng.jpg?fit=1080%2C1440&ssl=1',
+    desc: `Indomieeeeeeeeeeee selera firaaaaaaaa`,
   },
   {
     id: 2,
@@ -70,6 +70,14 @@ const menu = [
     price: 16.99,
     img: './images/item-9.jpeg',
     desc: `skateboard fam synth authentic semiotics. Live-edge lyft af, edison bulb yuccie crucifix microdosing.`,
+  },
+  {
+    id: 10,
+    title: 'Superbubur',
+    category: 'breakfast',
+    price: 8.99,
+    img: 'https://assets.klikindomaret.com/products/20013831/20013831_1.jpg',
+    desc: `Ini bukan pork!!! INI BUBUR AYAM!!!!!skateboard dasdaszxcxzc asdasdsadasdasdadadadsadaasdsa `,
   },
 ];
 export default menu;
