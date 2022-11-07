@@ -1,14 +1,21 @@
 import React from 'react';
 
-const Categories = ({filter}) => {
+
+const Categories = (props) => {
+  const {ktg, filter} = props;
+
   return (
-  <div className='btn-container'>
-    <button className='filter-btn' onClick={()=>filter('all')}>All</button>
-    <button className='filter-btn' onClick={()=>filter('breakfast')}>Breakfast</button>
-    <button className='filter-btn' onClick={()=>filter('lunch')}>Lunch</button>
-    <button className='filter-btn' onClick={()=>filter('shakes')}>Shakes</button>
-  </div>
+    <div className='btn-container'>
+      {ktg.map((k,index)=>{
+        return (
+          <button className='filter-btn' onClick={()=>filter(k)} key={index} >
+            {k}
+          </button>
+        )
+      })}
+    </div>
   );
 };
 
 export default Categories;
+

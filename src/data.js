@@ -74,7 +74,7 @@ const menu = [
   {
     id: 10,
     title: 'Superbubur',
-    category: 'breakfast',
+    category: 'Snacks',
     price: 8.99,
     img: 'https://assets.klikindomaret.com/products/20013831/20013831_1.jpg',
     desc: `Ini bukan pork!!! INI BUBUR AYAM!!!!!skateboard dasdaszxcxzc asdasdsadasdasdadadadsadaasdsa `,

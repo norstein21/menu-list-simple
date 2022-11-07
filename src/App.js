@@ -4,8 +4,16 @@ import Categories from './Categories';
 import items from './data';
 
 function App() {
+
+  const menuKategori = ['all',...new Set(items.map((i=>
+    i.category)
+    ))];
+
   const [daftarMenu,setDaftarMenu] = useState(items);
-  const [kategori,setKategori] = useState([]);
+  const [kategori,setKategori] = useState(menuKategori);
+
+  //kita buat filter untuk menunya, dengan special Unique key (ES6)
+  
 
   const filterKategori = (filter) =>{
     if(filter==='all'){
@@ -23,7 +31,7 @@ function App() {
           <h2>Daftar Menu Fira</h2>
           <div className='underline'></div>
         </div>
-        <Categories filter={filterKategori} />
+        <Categories ktg={kategori} filter={filterKategori} />
         <Menu isi={daftarMenu} />
       </section>
     </main>
