@@ -28,7 +28,7 @@ function App() {
     <main>
       <section className='menu section'>
         <div className='title'>
-          <h2>Daftar Menu Fira</h2>
+          <h2>Daftar Menu</h2>
           <div className='underline'></div>
         </div>
         <Categories ktg={kategori} filter={filterKategori} />
